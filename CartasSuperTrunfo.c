@@ -131,7 +131,7 @@ int main() {
 
 //Fim da exibição dos dados das cartas
 
-//Variáveis de comparação 
+/*Variáveis de comparação não foram necessárias
     resultado_populacao = populacao_1 > populacao_2;
     resultado_pontos = pontos_turisticos_1 > pontos_turisticos_2;
     resultado_area = area_1 > area_2;
@@ -139,22 +139,76 @@ int main() {
     resultado_densidade = densidade_pop_1 > densidade_pop_2;
     resultado_pibpercapita = pib_per_capita_1 > pib_per_capita_2;
     resultado_SuperPoder = SuperPoder_1 > SuperPoder_2;
+*/
 
 //Início das comparações básicas entre as cartas
     printf("\n\n");  
 
-    printf("Agora, as comparações entre as cartas:\n");
+    printf("Agora, vamos às comparações entre as cartas:\n");
     
     printf("\n"); 
 
-    printf("A população de %s é maior que a de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_populacao);
-    printf("O número de pontos turísticos de %s é maior que o de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_pontos);
-    printf("A área de %s é maior que a de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_area);
-    printf("O PIB de %s é maior que o de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_pib);
-    printf("A densidade populacional de %s é maior que a de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_densidade);
-    printf("O PIB per capita de %s é maior que o de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_pibpercapita);
-    printf("O Super Poder de %s é maior que o de %s? %d\n", nome_cidade_1, nome_cidade_2, resultado_SuperPoder);
+    printf("- Comparação do atributo População:\n");
 
+          if (populacao_1 > populacao_2){
+             printf("A carta 1 (%s) vence, por ser a cidade mais populosa!\n", nome_cidade_1);
+          }else{
+             printf("A carta 2 (%s) vence, por ser a cidade mais populosa \n", nome_cidade_2);
+    }
+
+    printf("\n");
+    
+    printf("- Comparação do atributo Área:\n");
+          if (area_1 > area_2){
+             printf("A carta 1 (%s) vence, por ser a cidade com maior área!\n", nome_cidade_1);
+          }else{
+             printf("A carta 2 (%s) vence, por ser a cidade com maior área!\n", nome_cidade_2);
+    }
+
+    printf("\n");
+   
+    printf("- Comparação do atributo PIB:\n");
+          if (pib_1 > pib_2){
+              printf("A carta 1 (%s) vence, por ser a cidade com maior PIB!\n", nome_cidade_1);   
+          }else{
+              printf("A carta 2 (%s) vence, por ser a cidade com maior PIB!\n", nome_cidade_2);
+    }
+
+    printf("\n");
+
+    printf("- Comparação do atributo Pontos Turísticos:\n");
+          if (pontos_turisticos_1 > pontos_turisticos_2){
+              printf("A carta 1 (%s) vence, por ser a cidade com maior número de pontos turísticos!\n", nome_cidade_1);
+          }else{
+              printf("A carta 2 (%s) vence, por ser a cidade com maior número de pontos turísticos!\n", nome_cidade_2);
+    }
+
+    printf("\n");
+  
+    printf("- Comparação do atributo Densidade Populacional:\n");
+          if(densidade_pop_1 > densidade_pop_2){
+              printf("A carta 2 (%s) vence!\n", nome_cidade_2);
+          }else{
+              printf("A carta 1 (%s) vence!\n", nome_cidade_1);
+    }
+
+    printf("\n");
+
+    printf("- Comparação do atributo PIB per capita:\n");
+          if (pib_per_capita_1 > pib_per_capita_2){
+              printf("A carta 1 (%s) vence, por ser a cidade com maior PIB per capita!\n", nome_cidade_1);   
+          }else{
+              printf("A carta 2 (%s) vence, por ser a cidade com maior PIB per capita!\n", nome_cidade_2);
+    }
+
+    printf("\n");
+
+    printf("- Comparação do atributo Super Poder:\n");
+          if (SuperPoder_1 > SuperPoder_2){
+              printf("A carta 1 (%s) vence, por ter o atributo de Super Poder mais alto!\n", nome_cidade_1);
+          }else{
+              printf("A carta 2 (%s) vence, por ter o atributo de Super Poder mais alto!\n", nome_cidade_2); 
+    }
     return 0;
 
 } 
