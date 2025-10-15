@@ -61,10 +61,10 @@ No nível Mestre, você implementará comparações entre as cartas, utilizando 
 - **Comparação de Cartas:**
   - O sistema permitirá ao usuário comparar duas cartas com base nas propriedades inseridas e calculadas.
   - Cada carta terá um "Super Poder"(`float`), que é a soma de todas as propriedades.
- 
-  Obs: o Super Poder é a soma de todos os atributos (incluindo os calculados) com a densidade populacional `invertida`(Área/População, ao invés de População/Área).
-  Obs2: Lembre-se de trazer as unidades de medida para a mesma grandeza, para facilitar o cálculo.
-  Obs3: O inverso da densidade será um número muito baixo, por mera questão estética, sugiro multiplicar esse valor por 1000 (`inverso_densidade_1 * 1000`).
+
+Obs: o Super Poder é a soma de todos os atributos (incluindo os calculados) com a densidade populacional `invertida`(Área/População, ao invés de População/Área);
+Obs2: Lembre-se de trazer as unidades de medida para a mesma grandeza, para facilitar o cálculo;
+Obs3: O inverso da densidade será um número muito baixo, por mera questão estética, sugiro multiplicar esse valor por 1000 (`inverso_densidade_1 * 1000`).
   
 ### ⚙️ Funcionalidades do Sistema:
 - O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades comparadas.
